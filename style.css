@@ -1,0 +1,198 @@
+body {
+	padding: 0;
+	margin: 0;
+	
+}
+
+.tile_header {
+	margin-bottom: 30px;
+}
+
+.tile_header h2 {
+	font-size: 36px;
+	font-weight: 700;
+    color: #5C5C5C;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.tile_box {
+	background: #FFFFFF;
+    border: 1px solid rgba(151,151,151,0.10);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);
+    height: auto;
+    padding: 24px 16px 42px 24px;
+}
+
+.tile_box h4.tile_content_title {
+	font-size: 24px;
+    color: #5C5C5C;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tile_box p.tile_content_url a {
+   font-size: 16px;
+   color: #98BE0F;
+   line-height: 27px;
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
+}
+
+.tile_box p.tile_content_desc {
+  font-size: 16px;
+  color: #989898;
+  line-height: 27px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tile_box_margin {
+	position: relative;
+	top: 30px;
+}
+
+
+/* Form Search Start */
+.form_search {
+    margin: 40px 0px;
+}
+.form_search .form_search_content {
+    position: relative;
+}
+.form_search .form_search_content input[type="text"] {
+    width: 100%;
+    background: #FFFFFF;
+    border: 3px solid #D4D4D4;
+    font-size: 24px;
+    color: #5C5C5C;
+    padding: 10px 0px 10px 10px;
+    line-height: 36px;
+    position: relative;
+    transition: 0.3s all ease-out;
+    outline: none;
+}
+.form_search .form_search_content input[type="text"]:focus {
+	border-color: #98BE0F;
+}
+.form_search .form_search_content i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #98BE0F;
+    font-size: 25px;
+    transform: translate(-50%,-50%);
+}
+.form_search_attributes {
+    background: #EBEBEB;
+    border: 5px solid #D4D4D4;
+    border-top: 2px solid #D4D4D4;
+    padding: 10px;
+}
+.form_search_attributes span {
+    font-size: 18px;
+    color: #989898;
+    padding-right: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.form_search_attributes .form_checkbox_item {
+    display: inline-block;   
+    margin-right: 30px; 
+    position: relative;
+}
+.form_search_attributes .form_checkbox_item input[type=checkbox] {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
+.form_search_attributes .form_checkbox_item label {
+    font-size: 16px;
+    color: #5C5C5C;
+    font-weight: normal;
+    position: relative;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.form_search_attributes .form_checkbox_item input[type="checkbox"] + label:before {
+    position: absolute;
+    content: "\f0c8";
+    font-family: Font Awesome\ 5 Free;
+    left: -8px;
+    top: -2px;
+    color: #98BE0F;
+    font-size: 18px;
+}
+.form_search_attributes .form_checkbox_item input[type="checkbox"]:checked + label:before {
+    content: "\f14a";
+    font-weight: bold;
+}
+.form_search_attributes button {
+    background: #98BE0F;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 16px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    float: right;
+    padding: 6px 25px;
+    transition: 0.3s all ease-out;
+}
+.form_search_attributes button:hover {
+	background-color: #66800A;
+	color: #FFFFFF;
+}
+/* Form Search End */
+
+
+@media screen and (max-width: 991px) {
+    .tile_margin {
+        margin-top: 20px;
+    }
+    .form_search_attributes {
+        padding-bottom: 50px;
+    }
+    .form_search_attributes button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .form_search_attributes .form_checkbox_item {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .form_search_attributes {
+        padding-bottom: 10px;
+        padding-left: 11px;
+    }
+
+    .form_search_attributes button {
+        margin-top: -35px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .tile_margin {
+        margin-top: 20px;
+    }
+    .tile_header h2 {
+        font-size: 30px;
+    }
+    .tile_box h4.tile_content_title {
+        font-size: 22px;
+    }
+    .tile_box p.tile_content_url a {
+        font-size: 12px;
+    }
+    .tile_box p.tile_content_desc {
+        font-size: 14px;
+    }
+    
+    .form_search_attributes button {
+        font-size: 12px;
+        padding: 6px 16px;
+
+    }
+}
